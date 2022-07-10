@@ -470,6 +470,7 @@ class Toolbar extends React.Component {
           {this.state.items.map((item, index) => (
             <Tooltip
               key={index}
+              placement="left"
               content="Drag and drop or click to add to form"
             >
               <ToolbarItem

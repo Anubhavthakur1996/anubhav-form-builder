@@ -24,12 +24,7 @@
 
           [class$="-BaseToolTop"] {
             width: max-content;
-
-            [class$="-Bubble"] {
-              color: white;
-              background: #555;
-              border: 1px solid #555;
-            }
+            opacity: 0.8;
           }
 
           .toolbar-item {
