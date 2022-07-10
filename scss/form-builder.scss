@@ -7,10 +7,6 @@
   display: flex;
   justify-content: center;
 
-  .react-form-builder .react-form-builder-toolbar ul li {
-    border: 1px dashed #ddd;
-  }
-
   .react-form-builder {
     display: flex;
     width: inherit;
@@ -19,54 +15,40 @@
       flex: 1;
     }
 
+    .react-form-builder-toolbar {
+      flex: 1;
+
+      .toolbar-item {
+        border: 1px solid #ddd;
+      }
+
+      .toolbar-item:hover {
+        box-shadow: rgba(0, 0, 0, 0.22) 0px 19px 43px;
+        transform: translate3d(0px, -1px, 0px);
+      }
+    }
+
     // .react-form-builder-toolbar {
     //   flex: 1;
-
-    //   .css-bbq5bh {
-    //     display: block;
-
-    //     .css-f5brtt-BaseToolTop {
-    //       width: max-content;
-
-    //       .css-17oi9u9-Bubble {
-    //         color: white;
-    //         background: #555;
-    //         border: 1px solid #555;
+    //   ul {
+    //     div {
+    //       display: block !important;
+    //       width: 100%;
+    //       li {
+    //         border: 1px solid #ddd !important;
     //       }
-    //     }
 
-    //     .toolbar-item {
-    //       border: 1px solid #ddd;
-    //     }
+    //       div {
+    //         width: max-content !important;
+    //       }
 
-    //     .toolbar-item:hover {
-    //       box-shadow: rgba(0, 0, 0, 0.22) 0px 19px 43px;
-    //       transform: translate3d(0px, -1px, 0px);
+    //       li:hover {
+    //         box-shadow: rgba(0, 0, 0, 0.22) 0px 19px 43px;
+    //         transform: translate3d(0px, -1px, 0px);
+    //       }
     //     }
     //   }
     // }
-
-    .react-form-builder-toolbar {
-      flex: 1;
-      ul {
-        div {
-          display: block !important;
-          width: 100%;
-          li {
-            border: 1px solid #ddd;
-          }
-
-          div {
-            width: max-content;
-          }
-
-          li:hover {
-            box-shadow: rgba(0, 0, 0, 0.22) 0px 19px 43px;
-            transform: translate3d(0px, -1px, 0px);
-          }
-        }
-      }
-    }
   }
 }
 

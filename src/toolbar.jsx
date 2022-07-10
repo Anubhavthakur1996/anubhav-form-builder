@@ -468,18 +468,18 @@ class Toolbar extends React.Component {
         <h4>{this.props.intl.formatMessage({ id: "toolbox" })}</h4>
         <ul>
           {this.state.items.map((item, index) => (
-            <Tooltip
-              key={index}
-              placement="left"
-              content="Drag and drop or click to add to form"
-            >
-              <ToolbarItem
-                data={item}
-                key={item.key}
-                onClick={this._onClick.bind(this, item)}
-                onCreate={this.create}
-              />
-            </Tooltip>
+            // <Tooltip
+            //   key={index}
+            //   placement="left"
+            //   content="Drag and drop or click to add to form"
+            // >
+            <ToolbarItem
+              data={item}
+              key={item.key}
+              onClick={this._onClick.bind(this, item)}
+              onCreate={this.create}
+            />
+            // </Tooltip>
           ))}
         </ul>
       </div>
