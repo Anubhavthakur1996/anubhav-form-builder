@@ -1,6 +1,6 @@
 {
   "name": "anubhav-form-builder-react",
-  "version": "0.0.6",
+  "version": "0.0.7",
   "description": "A react builder form built on top of react form builder 2 for exclusive use in VST project.",
   "main": "lib/index.js",
   "types": "types/index.d.ts",
