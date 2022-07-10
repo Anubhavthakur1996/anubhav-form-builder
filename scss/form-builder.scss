@@ -7,6 +7,10 @@
   display: flex;
   justify-content: center;
 
+  .react-form-builder .react-form-builder-toolbar ul li {
+    border: 1px dashed #ddd;
+  }
+
   .react-form-builder {
     display: flex;
     width: inherit;
@@ -46,7 +50,7 @@
       flex: 1;
       ul {
         div {
-          display: block;
+          display: block !important;
           width: 100%;
           li {
             border: 1px solid #ddd;
