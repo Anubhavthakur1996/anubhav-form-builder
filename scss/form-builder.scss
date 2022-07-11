@@ -7,55 +7,45 @@
   display: flex;
   justify-content: center;
 
-  .react-form-builder {
-    display: flex;
-    width: inherit;
+  // .react-form-builder {
+  //   .react-form-builder-preview {
 
-    .react-form-builder-preview {
-      flex: 1;
-    }
+  //   }
 
-    .react-form-builder-toolbar {
-      flex: 1;
+  //   .react-form-builder-toolbar {
 
-      .toolbar-item {
-        border: 1px solid #ddd;
-      }
+  //   }
 
-      .toolbar-item:hover {
-        box-shadow: rgba(0, 0, 0, 0.22) 0px 19px 43px;
-        transform: translate3d(0px, -1px, 0px);
-      }
-    }
+  //   // .react-form-builder-toolbar {
+  //   //   flex: 1;
+  //   //   ul {
+  //   //     div {
+  //   //       display: block !important;
+  //   //       width: 100%;
+  //   //       li {
+  //   //         border: 1px solid #ddd !important;
+  //   //       }
 
-    // .react-form-builder-toolbar {
-    //   flex: 1;
-    //   ul {
-    //     div {
-    //       display: block !important;
-    //       width: 100%;
-    //       li {
-    //         border: 1px solid #ddd !important;
-    //       }
+  //   //       div {
+  //   //         width: max-content !important;
+  //   //       }
 
-    //       div {
-    //         width: max-content !important;
-    //       }
-
-    //       li:hover {
-    //         box-shadow: rgba(0, 0, 0, 0.22) 0px 19px 43px;
-    //         transform: translate3d(0px, -1px, 0px);
-    //       }
-    //     }
-    //   }
-    // }
-  }
+  //   //       li:hover {
+  //   //         box-shadow: rgba(0, 0, 0, 0.22) 0px 19px 43px;
+  //   //         transform: translate3d(0px, -1px, 0px);
+  //   //       }
+  //   //     }
+  //   //   }
+  //   // }
+  // }
 }
 
 .react-form-builder {
+  display: flex;
+  width: inherit;
+
   .react-form-builder-preview {
-    // position: relative;
-    // width: 70%;
+    flex: 1;
     border: 1px solid #ddd;
     background: #fafafa;
     padding: 10px;
@@ -283,7 +273,7 @@
   }
 
   .react-form-builder-toolbar {
-    width: 100%;
+    flex: 1;
     background: #fff;
     margin-top: -30px;
 
@@ -297,15 +287,21 @@
     }
     ul {
       padding: 0;
-      li {
+
+      .toolbar-item {
+        border: 1px solid #ddd;
         cursor: pointer;
         list-style: none;
         margin: 5px;
         padding: 10px;
-        border: 1px dashed #ddd;
         i {
           margin: 0 15px 0 10px;
         }
+      }
+
+      .toolbar-item:hover {
+        box-shadow: rgba(0, 0, 0, 0.22) 0px 19px 43px;
+        transform: translate3d(0px, -1px, 0px);
       }
     }
   }
