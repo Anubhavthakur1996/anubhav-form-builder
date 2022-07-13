@@ -1059,70 +1059,6 @@ class Draw extends React.Component {
   }
 }
 
-class BarCodeScanner extends React.Component {
-  constructor(props) {
-    super(props);
-    this.state = {
-      result: "No result",
-    };
-
-    this.handleScan = this.handleScan.bind(this);
-  }
-
-  handleScan(data) {
-    this.setState({
-      result: data,
-    });
-  }
-
-  handleError(err) {
-    console.error(err);
-  }
-
-  render() {
-    let baseClasses = "SortableItem rfb-item";
-
-    return (
-      <div style={{ ...this.props.style }} className={baseClasses}>
-        <ComponentHeader {...this.props} />
-        <div className="form-group">
-          <BarcodeReader onError={this.handleError} onScan={this.handleScan} />
-          <p>{this.state.result}</p>
-        </div>
-      </div>
-    );
-  }
-}
-
-class Location extends React.Component {
-  render() {
-    let classNames = "static";
-    if (this.props.data.bold) {
-      classNames += " bold";
-    }
-    if (this.props.data.italic) {
-      classNames += " italic";
-    }
-
-    let baseClasses = "SortableItem rfb-item";
-    if (this.props.data.pageBreakBefore) {
-      baseClasses += " alwaysbreak";
-    }
-
-    return (
-      <div style={{ ...this.props.style }} className={baseClasses}>
-        <ComponentHeader {...this.props} />
-        <p
-          className={classNames}
-          dangerouslySetInnerHTML={{
-            __html: myxss.process(this.props.data.content),
-          }}
-        />
-      </div>
-    );
-  }
-}
-
 FormElements.Header = Header;
 FormElements.Paragraph = Paragraph;
 FormElements.Label = Label;
@@ -1144,7 +1080,5 @@ FormElements.Camera = Camera;
 FormElements.FileUpload = FileUpload;
 FormElements.Range = Range;
 FormElements.Draw = Draw;
-FormElements.BarCodeScanner = BarCodeScanner;
-FormElements.Location = Location;
 
 export default FormElements;

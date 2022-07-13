@@ -26,15 +26,11 @@ const {
   Range,
   FileUpload,
   Draw,
-  BarCodeScanner,
-  Location,
 } = BaseFormElements;
 
 const FormElements = {};
 
 FormElements.Draw = SortableElement(Draw);
-FormElements.BarCodeScanner = SortableElement(BarCodeScanner);
-FormElements.Location = SortableElement(Location);
 FormElements.Header = SortableElement(Header);
 FormElements.Paragraph = SortableElement(Paragraph);
 FormElements.Label = SortableElement(Label);

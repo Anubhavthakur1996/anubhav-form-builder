@@ -3,9 +3,9 @@
   "version": "0.1.0",
   "private": true,
   "dependencies": {
+    "anubhav-form-builder-react": "^0.0.91",
     "react": "^17.0.1",
     "react-dom": "^17.0.1",
-    "react-form-builder2": "^0.8.7",
     "react-scripts": "^4.0.3"
   },
   "scripts": {
